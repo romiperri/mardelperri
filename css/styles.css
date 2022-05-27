@@ -12,6 +12,8 @@ body {
 
 /*Encabezado de la pagina web*/
 /*Con background-color elegimos el color del fondo de esta seccion*/
+
+
 header {
   background-color: white;
   position: fixed;
