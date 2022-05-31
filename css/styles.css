@@ -4,7 +4,7 @@
   margin: 0px;
   padding: 0px;
 }
-/*testing branches*/
+
 body {
   background-color: rgb(231, 231, 231);
   /*elegimos el color que va a tener de fondo nuestra pagina*/
@@ -12,8 +12,6 @@ body {
 
 /*Encabezado de la pagina web*/
 /*Con background-color elegimos el color del fondo de esta seccion*/
-
-
 header {
   background-color: white;
   position: fixed;
@@ -680,5 +678,21 @@ footer {
     height: 15rem;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  /*Mobile Galeria*/
+  .gridContainerGaleria {
+    display: grid;
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(4, 400px);
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .foto-b {
+    grid-column: 2/2;
+  }
+  .tituloGaleria {
+    background-color: rgb(41, 116, 141);
+    padding: 4rem;
+    width: 28rem;
   }
 }
