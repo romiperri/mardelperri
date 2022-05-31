@@ -117,7 +117,14 @@ main.contenedor-seccion {
   height: 19rem;
   padding: 2%;
   grid-area: section-parrafo1;
+  transition: 0.5s;
 }
+
+.section-parrafo1:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
 main.contenedor-seccion-2 {
   display: flex;
   flex-flow: row nowrap;
@@ -135,6 +142,11 @@ main.contenedor-seccion-2 {
   height: 19rem;
   padding: 2%;
   grid-area: section-parrafo2;
+  transition: 0.5s;
+}
+.section-parrafo2:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
 }
 /*Le damos estilo al titulo que va a estar junto a una imagen*/
 .title {
@@ -357,6 +369,11 @@ footer {
   line-height: 2;
   background-color: rgb(255, 255, 255);
   grid-area: parrafo1;
+  transition: 0.5s;
+}
+.parrafo1:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
 }
 
 .parrafo2 {
@@ -372,6 +389,11 @@ footer {
   line-height: 2;
   background-color: rgb(255, 255, 255);
   grid-area: parrafo2;
+  transition: 0.5s;
+}
+.parrafo2:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
 }
 .imagen2 {
   grid-area: imagen2;
