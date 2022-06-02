@@ -56,7 +56,6 @@ ul li a:hover {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   text-decoration: none;
-  padding: 1px;
 }
 
 /*Le agregamos estilos de tipografia, color y tamaño a los titulos y parrafos*/
@@ -117,7 +116,14 @@ main.contenedor-seccion {
   height: 19rem;
   padding: 2%;
   grid-area: section-parrafo1;
+  transition: 0.5s;
 }
+
+.section-parrafo1:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
 main.contenedor-seccion-2 {
   display: flex;
   flex-flow: row nowrap;
@@ -135,6 +141,11 @@ main.contenedor-seccion-2 {
   height: 19rem;
   padding: 2%;
   grid-area: section-parrafo2;
+  transition: 0.5s;
+}
+.section-parrafo2:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
 }
 /*Le damos estilo al titulo que va a estar junto a una imagen*/
 .title {
@@ -162,14 +173,13 @@ main.contenedor-seccion-2 {
 }
 
 footer {
-  background-color: rgb(59, 59, 59);
-  padding: 2%;
   grid-area: footer;
 }
 
 .seguinos-container {
   width: 70%;
-  text-align: right;
+  justify-content: end;
+  display: flex;
 }
 
 .links {
@@ -199,20 +209,16 @@ footer {
   width: 400px;
 }
 
-.fa {
-  padding: 15px;
-  font-size: 20px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
+.redes{
+  margin-bottom: 1%;
   opacity: 0.75;
 }
 
-.fa:hover {
+.redes:hover {
   opacity: 1;
 }
 
-.fa-facebook {
+/*.fa-facebook {
   background: #3b5998;
   color: white;
   border-radius: 50%;
@@ -262,7 +268,7 @@ footer {
   width: 1rem;
   height: 1rem;
 }
-
+*/
 .redes {
   padding-left: 1%;
   padding-right: 1%;
@@ -357,6 +363,11 @@ footer {
   line-height: 2;
   background-color: rgb(255, 255, 255);
   grid-area: parrafo1;
+  transition: 0.5s;
+}
+.parrafo1:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
 }
 
 .parrafo2 {
@@ -372,6 +383,11 @@ footer {
   line-height: 2;
   background-color: rgb(255, 255, 255);
   grid-area: parrafo2;
+ transition: 0.5s;
+}
+.parrafo2:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
 }
 .imagen2 {
   grid-area: imagen2;
@@ -457,18 +473,18 @@ footer {
 /* ############################################ TABLET DESIGN ############################################*/
 @media (min-width: 600px) and (max-width: 1024px) {
   /*Media Queries*/
-  /*Tablet generico*/
+  /*Tablet generico
   .footer-horizontal {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-
   footer {
     background-color: rgb(59, 59, 59);
     padding: 2%;
     grid-area: footer;
-  }
+  }*/
+
 
   /*Media Queries*/
   /*Tablet Home*/
@@ -582,7 +598,7 @@ footer {
 /* ############################################ MOBILE DESIGN ############################################*/
 @media screen and (max-width: 600px) {
   /*Media Queries*/
-  /*Mobile generico*/
+  /*Mobile generico
   .footer-horizontal {
     display: flex;
     flex-direction: row;
@@ -593,7 +609,7 @@ footer {
     background-color: rgb(59, 59, 59);
     padding: 2%;
     grid-area: footer;
-  }
+  }*/
 
   /* Mobile Home*/
   main.contenedor-seccion {
