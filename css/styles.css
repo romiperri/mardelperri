@@ -209,7 +209,7 @@ footer {
   width: 400px;
 }
 
-.redes{
+.redes {
   margin-bottom: 1%;
   opacity: 0.75;
 }
@@ -334,8 +334,8 @@ footer {
   grid-area: titulo-gastronomia;
   background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.473)),
     url(../img/gastronomia.jpg);
-  width: 99%;
-  height: 80vh;
+  width: 100%;
+  height: 85vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -353,7 +353,7 @@ footer {
 }
 
 .parrafo1 {
-  height: 40%;
+  height: 19rem;
   padding: 2%;
   margin-left: 4%;
   margin-right: 5%;
@@ -378,12 +378,12 @@ footer {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 10%;
-  height: 45%;
+  height: 20rem;
   font-family: monospace;
   line-height: 2;
   background-color: rgb(255, 255, 255);
   grid-area: parrafo2;
- transition: 0.5s;
+  transition: 0.5s;
 }
 .parrafo2:hover {
   transform: scale(1.01);
@@ -485,7 +485,6 @@ footer {
     grid-area: footer;
   }*/
 
-
   /*Media Queries*/
   /*Tablet Home*/
   main.contenedor-seccion {
@@ -552,17 +551,14 @@ footer {
   /*Tablet Gastronomia*/
   .grid-gastronomia {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 3%;
+    grid-template-columns: 42rem 42rem;
+    grid-template-rows: 40% 30% 30% 6%;
     grid-template-areas:
-      "titulo-gastronomia"
-      "imagen1"
-      "parrafo1"
-      "imagen2"
-      "parrafo2"
-      "footer";
+      "titulo-gastronomia titulo-gastronomia "
+      "imagen1 parrafo1"
+      "parrafo2 imagen2"
+      "footer footer";
   }
-
   .titulo-gastronomia {
     width: 100%;
     height: 70vh;
@@ -662,7 +658,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 20rem 20rem 20rem 20rem 20rem 8rem;
     grid-template-areas:
-      "titulo-gastronomia  "
+      "titulo-gastronomia"
       "imagen1"
       "parrafo1"
       "imagen2"
@@ -699,8 +695,8 @@ footer {
   .gridContainerGaleria {
     display: grid;
     grid-template-columns: repeat(2, 15rem);
-    grid-template-rows: repeat(4, 400px);
-    gap: 1rem;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.5rem;
     padding: 2rem;
   }
   .foto-b {
@@ -708,7 +704,7 @@ footer {
   }
   .tituloGaleria {
     background-color: rgb(41, 116, 141);
-    padding: 4rem;
-    width: 28rem;
+    padding: 5rem;
+    width: 38rem;
   }
 }
