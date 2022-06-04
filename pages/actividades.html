@@ -14,25 +14,63 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
-    <!--linkeamos logos de redes-->
+    <!--CDN de Bootstrap CSS-->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
     <!-- linkeamos nuestro css -->
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <!--Seccion de logo y nombre de la pagina -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="#">ACTIVIDADES</a></li>
-          <li><a href="gastronomia.html">GASTRONOMIA</a></li>
-          <li><a href="galeria.html">GALERIA</a></li>
-          <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
+     <!-- Seccion de navegacion y menu de inicio -->
+     <header>
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../img/logola.png" class="logo" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/actividades.html"
+                  >ACTIVIDADES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/gastronomia.html"
+                  >GASTRONOMIA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/galeria.html">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <!--Seccion de actividades-->
@@ -119,48 +157,63 @@
       </div>
     </section>
     <footer>
-      <div class="footer-horizontal">
-        <div class="links">
-          <div class="linksdeinteres">
-            <h4>Links de interes</h4>
-          </div>
-          <div class="all-links">
-            <a href="http://www.osmgp.gov.ar/osse/torre-tanque/" target="blanck"
-              >Torre-Tanque</a
-            >
-            <a href="https://www.mardelplata.gob.ar/" target="blanck"
-              >Sitio Municipal</a
-            >
-            <a
-              href="https://es-la.facebook.com/villavictoriamgp/"
-              target="blank"
-              >VillaVictoria</a
-            >
-            <a href="https://www.mardelplata.com/hoteles.html" target="blanck"
-              >Hoteles Mar del Plata</a
-            >
-          </div>
-        </div>
-        <div class="seguinos-container">
-          <div class="redes">
-            <a
-              href="https://es-la.facebook.com/"
-              class="fa fa-facebook"
-              target="_blank"
-            ></a>
-            <a
-              href="https://www.instagram.com/"
-              class="fa fa-instagram"
-              target="_blank"
-            ></a>
-            <a
-              href="https://twitter.com/?lang=es"
-              class="fa fa-twitter"
-              target="_blank"
-            ></a>
+      <div class="container-fluid">
+        <div class="row p-2 bg-dark text-white">
+          <div class="footer-horizontal">
+            <div class="col-xs-12 col-md-6 col-lg-6">
+              <div class="links">
+                <div class="linksdeinteres">
+                  <h4>Links de interes</h4>
+                </div>
+
+                <div class="all-links">
+                  <a
+                    href="http://www.osmgp.gov.ar/osse/torre-tanque/"
+                    target="blanck"
+                    >Torre-Tanque</a
+                  >
+                  <a href="https://www.mardelplata.gob.ar/" target="blanck"
+                    >Sitio Municipal</a
+                  >
+                  <a
+                    href="https://es-la.facebook.com/villavictoriamgp/"
+                    target="blank"
+                    >VillaVictoria</a
+                  >
+                  <a
+                    href="https://www.mardelplata.com/hoteles.html"
+                    target="blanck"
+                    >Hoteles Mar del Plata</a
+                  >
+                </div>
+              </div>
+            </div>
+              <div class="seguinos-container">
+                <div class="redes">
+                  <div class="col-xs-12 col-md-12 col-lg-12">
+                  <h4>Seguinos en nuestras redes</h4>
+                  <a target="_blank" href="https://es-la.facebook.com/"
+                    > <img class="redes p-2" src="../img/facebook.png"
+                  /></a>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <img class="redes p-2" src="../img/instagram.png"
+                  /></a>
+                  <a href="https://www.twitter.com/" target="_blank">
+                    <img class="redes p-2" src="../img/twitter.png"
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+  </div>
+    <!--CDN de JS bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
