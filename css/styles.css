@@ -315,7 +315,7 @@ footer {
 .white {
   color: rgba(245, 245, 245, 0.842);
   text-align: left;
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 /*Seccion Gatronomia*/
@@ -423,51 +423,17 @@ footer {
 }
 
 /*Seccion Contacto*/
-.titulo-contacto {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.473)),
-    url(../img/contactate.jpg);
-  width: 99%;
-  height: 70vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5px;
-  align-items: center;
-  text-align: left;
+
+.titulo-c {
+  background-color: rgb(41, 116, 141);
+  padding: 6%;
+  font-size: 20px;
 }
 
-.formulario {
-  padding: 4%;
-  display: flex;
-  margin-top: 2%;
-  margin-left: 4%;
-  flex-direction: column;
-  margin-right: 700px;
-  justify-content: space-around;
-  background-color: rgb(255, 255, 255);
-}
-
-.Datos__formulario {
-  padding: 3%;
-  display: flex;
-  margin-bottom: 4%;
-  width: 60rem;
-}
-.newsletter {
-  font-size: 16px;
-  font-family: monospace;
-  color: rgb(26, 26, 26);
-}
-.h4-titulo {
-  padding: 5%;
-  text-align: center;
-}
 .mapa {
   padding: 3%;
+  margin-left: 5rem;
+  margin-right: 20rem;
 }
 
 /* ############################################ TABLET DESIGN ############################################*/

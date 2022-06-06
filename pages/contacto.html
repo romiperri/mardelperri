@@ -74,63 +74,69 @@
         </div>
       </nav>
     </header>
-    <div class="titulo-contacto">
-      <h1 class="white">Contactate con nosotros</h1>
-    </div>
-    <div class="h4-titulo">
-      <h4>
+    <div class="container-fluid">
+      <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12" class="titulo-contacto">
+      <div class="titulo-c">
+       <h1>Contactate con nosotros</h1>
+       <h4 class="white">
         Estamos muy contentos de poder ayudarte. Completa los datos y en breve
         nos estaremos comunicando con vos.
       </h4>
     </div>
-    <section class="formulario">
-      <div class="Datos__formulario">
-      <form action="" method="get">
-        <input type="text" placeholder="Nombre" />
-      </div>
-      <div class="Datos__formulario">
-        <input type="text" placeholder="Apellido" />
-      </div>
-      <div class="Datos__formulario">
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Ingresa tu email"
-        />
-      </div>
-      <div class="Datos__formulario">
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Mensaje o comentario"
-          ></textarea>
-      </div>
-      <div class="Datos__formulario">
-          <label class="newsletter" for="checkBoletin"> Quiero suscribirme al Newsletter </label>
-          <input type="checkbox" name="boletin" id="check" />
-      </div>
-      <div class="Datos__formulario">
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Limpiar" />
-      </div>
-      </form>
-    </section>
-    <div class="mapa">
-    <iframe
-      src="https://www.google.com/maps/d/embed?mid=1Zi6f4hqgGWDKFeeblfYOqTDVhbA&hl=es&ehbc=2E312F"
-      width="640"
-      height="480"
-    ></iframe>
-    </div>
-
+  </div>
+  </div>
+      <form>
+        <div class="row g-3 mt-3 mb-3 justify-content-center">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <input type="text" class="form-control" placeholder="Nombre" />
+          </div>
+        </div>
+        <div class="row g-3 mt-3 mb-3 justify-content-center">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <input type="text" class="form-control" placeholder="Apellido" />
+          </div>
+        </div>
+        <div class="row g-2 mt-3 mb-3 justify-content-center">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <input class="form-control" type="email" name="email" id="email" placeholder="Ingresa tu email" />
+          </div>
+        </div>
+  
+        <div class="row g-2 mt-3 mb-3 justify-content-center">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <textarea class="form-control" name="" id="" cols="30" rows="10"
+              placeholder="Mensaje o comentario"></textarea>
+          </div>
+        </div>
+  
+        <div class="row g-2 mt-3 mb-3 justify-content-center">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="form-check">
+              <input type="checkbox" id="checkTerms" class="form-check-input" name="boletin" id="check" />
+              <label for="checkTerms" class="form-check-label">Acepto los terminos y condiciones</label>
+            </div>
+          </div>
+        </div>
+        <div class="row g-2 mt-3 mb-3 justify-content-center">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <button type="button" class="btn btn-outline-success">Enviar</button>
+          </div>
+        </div>
+        <div class="row g-2 mt-3 mb-3 justify-content-center">
+          <div class="col-lg-6 col-md-12 col-sm-12" class="mapa">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1Zi6f4hqgGWDKFeeblfYOqTDVhbA&hl=es&ehbc=2E312F"
+              width="640" height="480"></iframe>
+          </div>
+        </div>
+        </form>
+ </div>
+ 
     <footer>
       <div class="container-fluid">
         <div class="row p-2 bg-dark text-white">
-          <d  iv class="footer-horizontal">
-            <div class="col-xs-12 col-md-6 col-lg-6">
+          <div class="footer-horizontal">
+            <div class="col-sm-6 col-md-6 col-lg-6">
               <div class="links">
                 <div class="linksdeinteres">
                   <h4>Links de interes</h4>
@@ -160,7 +166,7 @@
             </div>
               <div class="seguinos-container">
                 <div class="redes">
-                  <div class="col-xs-12 col-md-12 col-lg-12">
+                  <div class="col-md-6 col-lg-12 col-sm-6">
                   <h4>Seguinos en nuestras redes</h4>
                   <a target="_blank" href="https://es-la.facebook.com/"
                     > <img class="redes p-2" src="../img/facebook.png"
