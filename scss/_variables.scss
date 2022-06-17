@@ -1,0 +1,16 @@
+//tipografias y colores
+
+$textoTitulos: "Poppins", sans-serif;
+
+//mapa
+
+$colores-pagina: (
+  primario: #e7e7e7,
+  titulos: #e9e9e9,
+  parrafos: #363636,
+);
+
+@mixin sizes($whidth, $height) {
+  width: $whidth;
+  height: $height;
+}
