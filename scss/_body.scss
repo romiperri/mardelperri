@@ -1,0 +1,227 @@
+@import "variables";
+
+header {
+  background-color: white;
+  position: fixed;
+  /*nos permite dejar fijo en toda la pagina web el menu de navegacion*/
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: map-get($colores-pagina, titulos);
+  font-family: $textoTitulos;
+  font-size: 30px;
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: map-get($colores-pagina, titulos);
+  font-family: $textoTitulos;
+  font-size: 30px;
+}
+
+h4 {
+  font-family: $textoTitulos;
+  font-size: 20px;
+}
+
+p {
+  color: map-get($colores-pagina, parrafos);
+  font-size: 15px;
+  font-family: monospace;
+  line-height: 2;
+}
+
+nav {
+  padding: 1.5%;
+  /*establecemos el padding*/
+  ul {
+    list-style-type: none;
+    /*Elimina los bullets o viñetas de nuestra lista*/
+    text-align: center;
+    /*Alinea el texto hacia el centro*/
+    li {
+      padding: 0.5%;
+      display: inline;
+      /*Alinea la lista no ordenada del menu para que se vea de forma horizontal*/
+      a {
+        color: black;
+        font-family: $textoTitulos;
+        /*Con la propiedad "font.family" traemos como valor nuestra fuente tipografica, linkeada en el html*/
+        font-size: 15px;
+        /*Definimos su tamaño*/
+        text-decoration: none;
+        /*Con esta propiedad le quitamos el subrayado a nuestro menu*/
+        padding: 0px;
+
+        &:hover {
+          font-weight: bold;
+          /*al pasar el mouse se ponen las letras en negrita*/
+          font-family: $textoTitulos;
+          font-size: 15px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+main.contenedor-seccion {
+  grid-template-columns: repeat(2, 50% 50%);
+  grid-template-rows: auto 1fr 1fr 6%;
+  grid-template-areas:
+    "title title"
+    "section-imagen1 section-parrafo1"
+    "section-parrafo2 section-imagen2"
+    "footer footer";
+  display: grid;
+
+  .section-imagen1 {
+    padding: 2%;
+    margin-left: 2%;
+    grid-area: section-imagen1;
+    .img__home {
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+  .section-parrafo1 {
+    background-color: rgb(255, 255, 255);
+    margin-top: 12%;
+    margin-left: 6%;
+    margin-right: 10%;
+    height: 19rem;
+    padding: 2%;
+    grid-area: section-parrafo1;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+    }
+  }
+
+  .section-imagen2 {
+    padding: 15px;
+    grid-area: section-imagen2;
+  }
+  .section-parrafo2 {
+    background-color: rgb(255, 255, 255);
+    margin-top: 12%;
+    margin-left: 6%;
+    margin-right: 10%;
+    height: 19rem;
+    padding: 2%;
+    grid-area: section-parrafo2;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+    }
+  }
+
+  .title {
+    @include sizes(100%, 80vh);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.466),
+        rgba(0, 0, 0, 0.473)
+      ),
+      url(../img/costa.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: title;
+  }
+
+  footer {
+    grid-area: footer;
+
+    .seguinos-container {
+      display: flex;
+      justify-content: end;
+    }
+
+    .links {
+      display: flex;
+      width: 100%;
+      a {
+        color: rgb(134, 130, 130);
+        text-decoration: none;
+        margin-right: 3%;
+
+        &:hover {
+          color: rgba(255, 255, 255, 0.747);
+          text-decoration: none;
+          margin-right: 3%;
+        }
+      }
+    }
+    .all-links {
+      width: 100%;
+    }
+
+    .linksdeinteres {
+      color: rgba(255, 255, 255, 0.747);
+      margin-bottom: 1%;
+      width: 400px;
+    }
+
+    .redes {
+      margin-bottom: 1%;
+      opacity: 0.75;
+    }
+
+    .redes:hover {
+      opacity: 1;
+    }
+  }
+}
+
+/*Seccion de Actividades*/
+
+.contenedor__actividades {
+  display: flex;
+  padding: 2%;
+}
+.imagen__A {
+  @include sizes(250%, 250%);
+  margin-top: 4%;
+}
+.parrafo__A {
+  padding: 3%;
+  text-align: left;
+  margin-right: 5%;
+  margin-left: 4%;
+  margin-top: 3%;
+  background-color: rgb(255, 255, 255);
+}
+
+.titulo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.473)),
+    url(../img/perritoenlaplaya.jpg);
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+  text-align: left;
+}
+.white {
+  color: rgba(245, 245, 245, 0.842);
+  text-align: left;
+  font-size: 20px;
+}
