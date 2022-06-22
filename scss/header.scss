@@ -1,0 +1,69 @@
+@import "variables";
+
+header {
+  background-color: white;
+  position: fixed;
+  /*nos permite dejar fijo en toda la pagina web el menu de navegacion*/
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: map-get($colores-pagina, titulos);
+  font-family: $textoTitulos;
+  font-size: 30px;
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: map-get($colores-pagina, titulos);
+  font-family: $textoTitulos;
+  font-size: 30px;
+}
+
+h4 {
+  font-family: $textoTitulos;
+  font-size: 20px;
+}
+
+p {
+  color: map-get($colores-pagina, parrafos);
+  font-size: 15px;
+  font-family: monospace;
+  line-height: 2;
+}
+
+nav {
+  padding: 1.5%;
+  /*establecemos el padding*/
+  ul {
+    list-style-type: none;
+    /*Elimina los bullets o viñetas de nuestra lista*/
+    text-align: center;
+    /*Alinea el texto hacia el centro*/
+    li {
+      padding: 0.5%;
+      display: inline;
+      /*Alinea la lista no ordenada del menu para que se vea de forma horizontal*/
+      a {
+        color: black;
+        font-family: $textoTitulos;
+        /*Con la propiedad "font.family" traemos como valor nuestra fuente tipografica, linkeada en el html*/
+        font-size: 15px;
+        /*Definimos su tamaño*/
+        text-decoration: none;
+        /*Con esta propiedad le quitamos el subrayado a nuestro menu*/
+        padding: 0px;
+
+        &:hover {
+          font-weight: bold;
+          /*al pasar el mouse se ponen las letras en negrita*/
+          font-family: $textoTitulos;
+          font-size: 15px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

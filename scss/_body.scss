@@ -1,72 +1,5 @@
 @import "variables";
 
-header {
-  background-color: white;
-  position: fixed;
-  /*nos permite dejar fijo en toda la pagina web el menu de navegacion*/
-  width: 100%;
-}
-
-h1 {
-  text-align: center;
-  color: map-get($colores-pagina, titulos);
-  font-family: $textoTitulos;
-  font-size: 30px;
-}
-
-h2,
-h3 {
-  text-align: center;
-  color: map-get($colores-pagina, titulos);
-  font-family: $textoTitulos;
-  font-size: 30px;
-}
-
-h4 {
-  font-family: $textoTitulos;
-  font-size: 20px;
-}
-
-p {
-  color: map-get($colores-pagina, parrafos);
-  font-size: 15px;
-  font-family: monospace;
-  line-height: 2;
-}
-
-nav {
-  padding: 1.5%;
-  /*establecemos el padding*/
-  ul {
-    list-style-type: none;
-    /*Elimina los bullets o viñetas de nuestra lista*/
-    text-align: center;
-    /*Alinea el texto hacia el centro*/
-    li {
-      padding: 0.5%;
-      display: inline;
-      /*Alinea la lista no ordenada del menu para que se vea de forma horizontal*/
-      a {
-        color: black;
-        font-family: $textoTitulos;
-        /*Con la propiedad "font.family" traemos como valor nuestra fuente tipografica, linkeada en el html*/
-        font-size: 15px;
-        /*Definimos su tamaño*/
-        text-decoration: none;
-        /*Con esta propiedad le quitamos el subrayado a nuestro menu*/
-        padding: 0px;
-
-        &:hover {
-          font-weight: bold;
-          /*al pasar el mouse se ponen las letras en negrita*/
-          font-family: $textoTitulos;
-          font-size: 15px;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-}
 main.contenedor-seccion {
   grid-template-columns: repeat(2, 50% 50%);
   grid-template-rows: auto 1fr 1fr 6%;
@@ -140,49 +73,6 @@ main.contenedor-seccion {
     text-align: center;
     grid-area: title;
   }
-
-  footer {
-    grid-area: footer;
-
-    .seguinos-container {
-      display: flex;
-      justify-content: end;
-    }
-
-    .links {
-      display: flex;
-      width: 100%;
-      a {
-        color: rgb(134, 130, 130);
-        text-decoration: none;
-        margin-right: 3%;
-
-        &:hover {
-          color: rgba(255, 255, 255, 0.747);
-          text-decoration: none;
-          margin-right: 3%;
-        }
-      }
-    }
-    .all-links {
-      width: 100%;
-    }
-
-    .linksdeinteres {
-      color: rgba(255, 255, 255, 0.747);
-      margin-bottom: 1%;
-      width: 400px;
-    }
-
-    .redes {
-      margin-bottom: 1%;
-      opacity: 0.75;
-    }
-
-    .redes:hover {
-      opacity: 1;
-    }
-  }
 }
 
 /*Seccion de Actividades*/
@@ -192,8 +82,14 @@ main.contenedor-seccion {
   padding: 2%;
 }
 .imagen__A {
-  @include sizes(250%, 250%);
+  @include sizes(100%, 100%);
   margin-top: 4%;
+}
+.img__gallery {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
 .parrafo__A {
   padding: 3%;
@@ -224,4 +120,123 @@ main.contenedor-seccion {
   color: rgba(245, 245, 245, 0.842);
   text-align: left;
   font-size: 20px;
+}
+/*Seccion Gatronomia*/
+.grid-gastronomia {
+  display: grid;
+  grid-template-columns: 42rem 42rem;
+  grid-template-rows: 40% 30% 30% 6%;
+  grid-template-areas:
+    "titulo-gastronomia titulo-gastronomia "
+    "imagen1 parrafo1"
+    "parrafo2 imagen2"
+    "footer footer";
+
+  .titulo-gastronomia {
+    grid-area: titulo-gastronomia;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.466),
+        rgba(0, 0, 0, 0.473)
+      ),
+      url(../img/gastronomia.jpg);
+    width: 100%;
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+  }
+
+  .imagen1 {
+    grid-area: imagen1;
+    margin-left: 3%;
+  }
+
+  .parrafo1 {
+    height: 19rem;
+    padding: 2%;
+    margin-left: 4%;
+    margin-right: 5%;
+    margin-top: 10%;
+    font-family: monospace;
+    font-size: 25px;
+    line-height: 2;
+    background-color: rgb(255, 255, 255);
+    grid-area: parrafo1;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+    }
+  }
+  .parrafo2 {
+    text-align: left;
+    color: rgb(54, 54, 54);
+    display: flex;
+    padding: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    height: 20rem;
+    font-family: monospace;
+    line-height: 2;
+    background-color: rgb(255, 255, 255);
+    grid-area: parrafo2;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+    }
+  }
+  .imagen2 {
+    grid-area: imagen2;
+    margin-right: 2%;
+    margin-left: 10%;
+    margin-bottom: 4%;
+  }
+}
+
+/*Seccion Galeria*/
+.tituloGaleria {
+  background-color: rgb(41, 116, 141);
+  padding: 6%;
+}
+.gridContainerGaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 400px);
+  gap: 1rem;
+  padding: 1.5rem;
+
+  .img__gallery {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .foto-a {
+    grid-row: 1/3;
+  }
+  .foto-b {
+    grid-column: 2/4;
+  }
+}
+
+/*Seccion Contacto*/
+
+.titulo-c {
+  background-color: rgb(41, 116, 141);
+  padding: 6%;
+  font-size: 20px;
+}
+
+.mapa {
+  padding: 3%;
+  margin-left: 5rem;
+  margin-right: 20rem;
 }
