@@ -1,0 +1,42 @@
+footer {
+    grid-area: footer;
+
+    .seguinos-container {
+      display: flex;
+      justify-content: end;
+    }
+
+    .links {
+      display: flex;
+      width: 100%;
+      a {
+        color: rgb(134, 130, 130);
+        text-decoration: none;
+        margin-right: 3%;
+
+        &:hover {
+          color: rgba(255, 255, 255, 0.747);
+          text-decoration: none;
+          margin-right: 3%;
+        }
+      }
+    }
+    .all-links {
+      width: 100%;
+    }
+
+    .linksdeinteres {
+      color: rgba(255, 255, 255, 0.747);
+      margin-bottom: 1%;
+      width: 400px;
+    }
+
+    .redes {
+      margin-bottom: 1%;
+      opacity: 0.75;
+    }
+
+    .redes:hover {
+      opacity: 1;
+    }
+  }
