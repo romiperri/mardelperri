@@ -1,5 +1,5 @@
 @import "variables";
-
+//seccion del Home
 main.contenedor-seccion {
   grid-template-columns: repeat(2, 50% 50%);
   grid-template-rows: auto 1fr 1fr 6%;
@@ -15,6 +15,8 @@ main.contenedor-seccion {
     margin-left: 2%;
     grid-area: section-imagen1;
     .img__home {
+      width: 100%;
+      height: 100%;
       border-radius: 10px;
       object-fit: cover;
     }
@@ -38,6 +40,12 @@ main.contenedor-seccion {
   .section-imagen2 {
     padding: 15px;
     grid-area: section-imagen2;
+    .img__home {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
   }
   .section-parrafo2 {
     background-color: rgb(255, 255, 255);
@@ -97,7 +105,7 @@ main.contenedor-seccion {
   margin-right: 5%;
   margin-left: 4%;
   margin-top: 3%;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .titulo {
