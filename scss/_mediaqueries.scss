@@ -1,64 +1,60 @@
 /* ############################################ TABLET DESIGN ############################################*/
 /*Tablet Home*/
 @media (min-width: 600px) and (max-width: 1024px) {
-  main.contenedor-seccion {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 20% 20% 20% 20% 2%;
-    grid-template-areas:
-      "title"
-      "section-imagen1"
-      "section-parrafo1"
-      "section-imagen2"
-      "section-parrafo2"
-      "footer ";
-    display: grid;
+  .section-imagen1 {
+    padding: 1%;
+    margin-left: 5%;
+    grid-area: section-imagen1;
+  }
+  h1 {
+    font-size: 25px;
+  }
 
-    .title {
-      width: 100%;
-      height: 150vh;
-      grid-area: title;
-    }
-    h1 {
-      font-size: 3rem;
-    }
-    h2,
-    h3 {
-      font-size: 3rem;
-    }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
 
+  .section-parrafo1 {
+    background-color: rgb(255, 255, 255);
+    margin-top: 12%;
+    margin-left: 6%;
+    margin-right: 10%;
+    height: 19rem;
+    padding: 2%;
+    grid-area: section-parrafo1;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+    }
+  }
+
+  .section-imagen2 {
+    padding: 15px;
+    grid-area: section-imagen2;
     .img__home {
+      width: 100%;
+      height: 100%;
       border-radius: 10px;
       object-fit: cover;
-      width: 1000px;
     }
-    .section-imagen1 {
-      grid-area: section-imagen1;
-      margin-top: 3%;
-      padding: 5%;
-      margin-left: 27rem;
-    }
-    .section-parrafo1 {
-      grid-area: section-parrafo1;
-      margin-top: 22rem;
-      margin-left: 33rem;
-      margin-right: 33rem;
-      height: 20rem;
-      width: 58rem;
-    }
-    .section-imagen2 {
-      grid-area: section-imagen2;
-      margin-left: 32rem;
-      margin-right: 24rem;
-      margin-bottom: 10rem;
-    }
-    .section-parrafo2 {
-      margin-top: 12rem;
-      margin-bottom: 4%;
-      margin-left: 32rem;
-      height: 10rem;
-      padding: 2%;
-      width: 60rem;
-      grid-area: section-parrafo2;
+  }
+  .section-parrafo2 {
+    background-color: rgb(255, 255, 255);
+    margin-top: 12%;
+    margin-left: 6%;
+    margin-right: 10%;
+    height: 19rem;
+    padding: 2%;
+    grid-area: section-parrafo2;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
     }
   }
   /*Tablet Gastronomia*/
@@ -109,7 +105,7 @@
 @media screen and (max-width: 600px) {
   /* Mobile Home*/
   main.contenedor-seccion {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas:
       "title"
@@ -120,75 +116,67 @@
       "footer";
     display: grid;
 
-    .title {
-      grid-area: title;
-      width: 100%;
-      height: 50vh;
+    .section-imagen1 {
+      padding: 2%;
+      margin-left: 2%;
+      grid-area: section-imagen1;
+      .img__home {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+    h1 {
+      font-size: 25px;
     }
 
-    .section-imagen1 {
-      grid-area: section-imagen1;
-      margin-top: 1%;
-      margin-left: 1%;
-      margin-right: 1%;
+    h2 {
+      font-size: 15px;
     }
+    p {
+      font-size: 10px;
+    }
+
     .section-parrafo1 {
+      background-color: rgb(255, 255, 255);
+      margin-top: 8%;
+      margin-left: 9%;
+      margin-right: 10%;
+      height: 82%;
+      padding: 2%;
       grid-area: section-parrafo1;
-      margin-top: 1%;
-      margin-left: 1%;
-      margin-right: 1%;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+      }
     }
+
     .section-imagen2 {
+      padding: 15px;
       grid-area: section-imagen2;
-      margin-left: 1%;
-      margin-right: 1%;
+      .img__home {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
     }
     .section-parrafo2 {
-      margin-top: 1%;
-      margin-left: 1%;
-      margin-right: 1%;
+      background-color: rgb(255, 255, 255);
+      margin-top: 8%;
+      margin-left: 9%;
+      margin-right: 10%;
+      height: 82%;
+      padding: 2%;
       grid-area: section-parrafo2;
-      margin-bottom: 2%;
-    }
-  }
-  /*Mobile Gastronomia*/
-  .grid-gastronomia {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20rem 20rem 20rem 20rem 20rem 8rem;
-    grid-template-areas:
-      "titulo-gastronomia"
-      "imagen1"
-      "parrafo1"
-      "imagen2"
-      "parrafo2"
-      "footer";
-
-    .titulo-gastronomia {
-      width: 100%;
-      height: 50vh;
-    }
-    .imagen1 {
-      margin-top: 2rem;
-      margin-left: 2rem;
-      margin-right: 2rem;
-    }
-    .parrafo1 {
-      margin-top: 1rem;
-      height: 18rem;
-      margin-left: 2rem;
-      margin-right: 2rem;
-    }
-    .imagen2 {
-      margin-top: 1rem;
-      margin-right: 2rem;
-      margin-left: 2rem;
-    }
-    .parrafo2 {
-      margin-top: 1rem;
-      height: 15rem;
-      margin-left: 2rem;
-      margin-right: 2rem;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+      }
     }
   }
   /*Mobile Galeria*/
