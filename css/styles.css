@@ -198,65 +198,35 @@ main.contenedor-seccion {
   font-size: 20px; }
 
 /*Seccion Gatronomia*/
-.grid-gastronomia {
-  display: grid;
-  grid-template-columns: 42rem 42rem;
-  grid-template-rows: 40% 30% 30% 6%;
-  grid-template-areas: "titulo-gastronomia titulo-gastronomia " "imagen1 parrafo1" "parrafo2 imagen2" "footer footer"; }
-  .grid-gastronomia .titulo-gastronomia {
-    grid-area: titulo-gastronomia;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.473)), url(../img/gastronomia.jpg);
-    width: 100%;
-    height: 85vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5px;
-    align-items: center; }
-  .grid-gastronomia .imagen1 {
-    grid-area: imagen1;
-    margin-left: 3%; }
-  .grid-gastronomia .parrafo1 {
-    height: 19rem;
-    padding: 2%;
-    margin-left: 4%;
-    margin-right: 5%;
-    margin-top: 10%;
-    font-family: monospace;
-    font-size: 25px;
-    line-height: 2;
-    background-color: white;
-    grid-area: parrafo1;
-    transition: 0.5s; }
-    .grid-gastronomia .parrafo1:hover {
-      transform: scale(1.01);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19); }
-  .grid-gastronomia .parrafo2 {
-    text-align: left;
-    color: #363636;
-    display: flex;
-    padding: 4%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    height: 20rem;
-    font-family: monospace;
-    line-height: 2;
-    background-color: white;
-    grid-area: parrafo2;
-    transition: 0.5s; }
-    .grid-gastronomia .parrafo2:hover {
-      transform: scale(1.01);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19); }
-  .grid-gastronomia .imagen2 {
-    grid-area: imagen2;
-    margin-right: 2%;
-    margin-left: 10%;
-    margin-bottom: 4%; }
+.contenedor-gastronomia {
+  display: flex;
+  padding: 2%; }
+
+.titulo-gastronomia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.473)), url(../img/gastronomia.jpg);
+  width: 100%;
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  align-items: center; }
+
+.parrafo1 {
+  height: 16rem;
+  padding: 2%;
+  margin-left: 4%;
+  margin-right: 5%;
+  margin-top: 10%;
+  font-family: monospace;
+  font-size: 25px;
+  line-height: 2;
+  background-color: #ffffff;
+  grid-area: parrafo1; }
 
 /*Seccion Galeria*/
 .tituloGaleria {
@@ -284,11 +254,6 @@ main.contenedor-seccion {
   background-color: #29748d;
   padding: 6%;
   font-size: 20px; }
-
-.mapa {
-  padding: 3%;
-  margin-left: 5rem;
-  margin-right: 20rem; }
 
 /* ############################################ TABLET DESIGN ############################################*/
 /*Tablet Home*/
@@ -364,7 +329,15 @@ main.contenedor-seccion {
       color: #363636;
       font-size: 15px;
       font-family: monospace;
-      line-height: 2; } }
+      line-height: 2; }
+  .titulo-c {
+    background-color: #29748d;
+    padding: 16%; }
+  .contacto {
+    font-size: 25px; }
+  .white {
+    text-align: center;
+    font-size: 20px; } }
 
 /* ############################################ MOBILE DESIGN ############################################*/
 @media screen and (max-width: 600px) {
@@ -374,6 +347,20 @@ main.contenedor-seccion {
     grid-template-rows: auto;
     grid-template-areas: "title" "section-imagen1" "section-parrafo1" "section-imagen2" "section-parrafo2" "footer";
     display: grid; }
+    main.contenedor-seccion .title {
+      width: 100%;
+      height: 40vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.473)), url(../img/costa.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      grid-area: title; }
     main.contenedor-seccion .section-imagen1 {
       padding: 2%;
       margin-left: 2%;
@@ -424,13 +411,28 @@ main.contenedor-seccion {
   /*Mobile Galeria*/
   .tituloGaleria {
     background-color: #29748d;
-    padding: 5rem;
-    width: 38rem; }
+    padding: 7rem;
+    width: 100%; }
   .gridContainerGaleria {
     display: grid;
-    grid-template-columns: repeat(2, 15rem);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 1.5rem;
-    padding: 2rem; }
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 1rem;
+    padding: 1rem; }
+    .gridContainerGaleria .foto-a {
+      grid-row: 1/2; }
     .gridContainerGaleria .foto-b {
-      grid-column: 2/2; } }
+      grid-column: 1/1; }
+  /*Seccion Contacto*/
+  .titulo-c {
+    background-color: #29748d;
+    padding: 30%; }
+  .contacto {
+    font-size: 20px; }
+  .white {
+    text-align: center;
+    font-size: 15px; }
+  .mapa {
+    background-color: aqua;
+    height: 300px;
+    width: 300px; } }
