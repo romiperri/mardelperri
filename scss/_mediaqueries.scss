@@ -99,6 +99,19 @@
       line-height: 2;
     }
   }
+  //tablet contacto
+
+  .titulo-c {
+    background-color: rgb(41, 116, 141);
+    padding: 16%;
+  }
+  .contacto {
+    font-size: 25px;
+  }
+  .white {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
 /* ############################################ MOBILE DESIGN ############################################*/
@@ -116,6 +129,25 @@
       "footer";
     display: grid;
 
+    .title {
+      @include sizes(100%, 40vh);
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.466),
+          rgba(0, 0, 0, 0.473)
+        ),
+        url(../img/costa.jpg);
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      grid-area: title;
+    }
     .section-imagen1 {
       padding: 2%;
       margin-left: 2%;
@@ -182,18 +214,41 @@
   /*Mobile Galeria*/
   .tituloGaleria {
     background-color: rgb(41, 116, 141);
-    padding: 5rem;
-    width: 38rem;
+    padding: 7rem;
+    width: 100%;
   }
   .gridContainerGaleria {
     display: grid;
-    grid-template-columns: repeat(2, 15rem);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 1.5rem;
-    padding: 2rem;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 1rem;
+    padding: 1rem;
 
-    .foto-b {
-      grid-column: 2/2;
+    .foto-a {
+      grid-row: 1/2;
     }
+    .foto-b {
+      grid-column: 1/1;
+    }
+  }
+
+  /*Seccion Contacto*/
+
+  .titulo-c {
+    background-color: rgb(41, 116, 141);
+    padding: 30%;
+  }
+  .contacto {
+    font-size: 20px;
+  }
+  .white {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .mapa {
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
   }
 }
