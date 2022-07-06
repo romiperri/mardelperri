@@ -24,13 +24,14 @@ h3 {
 
 h4 {
   font-family: $textoTitulos;
+  color: map-get($colores-pagina, titulos);
   font-size: 20px;
 }
 
 p {
   color: map-get($colores-pagina, parrafos);
-  font-size: 15px;
-  font-family: monospace;
+  font-size: 20px;
+  font-family: $textoParrafos;
   line-height: 2;
 }
 

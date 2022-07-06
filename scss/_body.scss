@@ -26,7 +26,7 @@ main.contenedor-seccion {
     margin-top: 12%;
     margin-left: 6%;
     margin-right: 10%;
-    height: 19rem;
+    height: 25rem;
     padding: 2%;
     grid-area: section-parrafo1;
     transition: 0.5s;
@@ -52,7 +52,7 @@ main.contenedor-seccion {
     margin-top: 12%;
     margin-left: 6%;
     margin-right: 10%;
-    height: 19rem;
+    height: 22rem;
     padding: 2%;
     grid-area: section-parrafo2;
     transition: 0.5s;
@@ -124,11 +124,7 @@ main.contenedor-seccion {
   align-items: center;
   text-align: left;
 }
-.white {
-  color: rgba(245, 245, 245, 0.842);
-  text-align: left;
-  font-size: 20px;
-}
+
 /*Seccion Gatronomia*/
 .contenedor-gastronomia {
   display: flex;
@@ -152,7 +148,7 @@ main.contenedor-seccion {
 }
 
 .parrafo1 {
-  height: 16rem;
+  height: 18rem;
   padding: 2%;
   margin-left: 4%;
   margin-right: 5%;
@@ -167,7 +163,7 @@ main.contenedor-seccion {
 /*Seccion Galeria*/
 .tituloGaleria {
   background-color: rgb(41, 116, 141);
-  padding: 6%;
+  padding: 8%;
 }
 .gridContainerGaleria {
   display: grid;
