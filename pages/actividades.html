@@ -21,6 +21,8 @@
      rel="stylesheet"
      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
      crossorigin="anonymous"/>
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- linkeamos nuestro css -->
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
@@ -76,11 +78,13 @@
       <div class="row mt-5">
         <div class="col-lg-6 col-md-12">
           <section class="contenedor__actividades">
-            <img class="img__gallery" src="../img/torreon2.jpg" alt="foto del Torreon del Monje" />
+            <img data-aos="fade-right"
+            data-aos-duration="1000" class="img__gallery" src="../img/torreon2.jpg" alt="foto del Torreon del Monje" />
         </div>
   
         <div class="col-lg-6 col-md-12">
-          <div class="parrafo__A">
+          <div data-aos="fade-left"
+          data-aos-duration="1000" class="parrafo__A">
             <p>El Torreon del Monje</p>
             <p>
               Fue inaugurado en el año 1904. Dentro de este edificio funcionan salas de exposiciones, instalaciones
@@ -98,12 +102,14 @@
       <div class="row mt-5">
         <div class="col-lg-6 col-md-12">
           <section class="contenedor__actividades">
-            <div class="imagen__A">
+            <div data-aos="fade-right"
+            data-aos-duration="1000" class="imagen__A">
               <img class="img__gallery" src="../img/dronetorretanque.jpg" alt="Foto de la Torre Tanque" />
             </div>
         </div>
         <div class="col-lg-6 col-md-12">
-          <div class="parrafo__A">
+          <div data-aos="fade-left"
+          data-aos-duration="1000" class="parrafo__A">
             <p>La Torre Tanque</p>
             <p>
               Fue reconstruida en 1943 y declarada Monumento
@@ -120,13 +126,15 @@
       <div class="row mt-5">
         <div class="col-lg-6 col-md-12">
           <section class="contenedor__actividades">
-            <div class="imagen__A">
+            <div data-aos="fade-right"
+            data-aos-duration="1000" class="imagen__A">
               <img class="img__gallery" src="../img/villavictoriaocampo.jpg" alt="Casa de Victoria Ocampo" />
             </div>
         </div>
   
         <div class="col-lg-6 col-md-12">
-          <div class="parrafo__A">
+          <div data-aos="fade-left"
+          data-aos-duration="1000" class="parrafo__A">
             <p>Centro Cultural Villa Victoria Ocampo</p>
             <p>
               Es un espacio de arte y arquitectura que permite entender cómo se
@@ -142,13 +150,15 @@
       <div class="row mt-5">
         <div class="col-lg-6 col-md-12">
           <section class="contenedor__actividades">
-            <div class="imagen__A">
+            <div data-aos="fade-right"
+            data-aos-duration="1000" class="imagen__A">
               <img class="img__gallery" src="../img/lagunadelospadres.jpg" alt="Laguna de los Padres" />
             </div>
         </div>
   
         <div class="col-lg-6 col-md-12">
-          <div class="parrafo__A">
+          <div data-aos="fade-left"
+          data-aos-duration="1000" class="parrafo__A">
             <p>Sierra de los Padres y Laguna</p>
             <p>
               Naturaleza y deportes se unen en una zona serrana ideal para conectar
@@ -209,5 +219,9 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous">
     </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
   </body>
 </html>
